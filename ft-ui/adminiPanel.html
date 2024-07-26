@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #0f1822;
+            border: 1px solid #dee2e6;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-right: 20px; 
+        }
+
+        .logo span {
+            color: #f857a27f; 
+            font-size: 2.5rem;
+        }
+
+        .logo span + span {
+            font-size: 1.8rem;
+            color: #495057; 
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav ul li {
+            margin-left: 20px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .nav ul li a:hover {
+            color: #0f1822;
+        }
+
+        .nav ul li a .fa {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+
+        .content-section {
+            width: 100%;
+            height: 100vh;
+            background-color: #343a40;
+            color: #fff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <span>IA</span><span> Dashboard</span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-blog"></i> Blogs</a></li>
+                <li><a href="#"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="content-container">
+            <h1>Welcome to the Admin Dashboard</h1>
+            <p>This section will hold All the content.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
